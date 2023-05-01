@@ -1,0 +1,79 @@
+
+header{
+    display: block;
+    padding-bottom: 12px;
+    background-color: rgb(207, 241, 125);
+    max-width: 1280px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1{
+    margin-bottom: 4px;
+}
+
+header a{
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: rgb(62, 184, 25);
+}
+
+.livros{
+    max-width: 1280px;
+    width: 100%;
+}
+
+.livros article{
+    display: flex;
+    background-color: rgba(62, 184, 25, 20%);
+}
+
+.livros img{
+    max-width: 300px;
+    width: 100%;
+}
+
+.livros .section_sinopse{
+    width: 75%;
+    margin-left: 16px;
+    text-align: justify;
+}
+
+.livros .section_meta{
+    width: 75%;
+    margin-left: 16px;
+    text-align: justify;
+}
+
+.livros .section_meta h4{
+    margin-bottom: 0px;
+}
+
+.livros .section_meta p{
+    margin-top: 4px;
+}
+
+.livros .section_participantes{
+    width: 75%;
+    margin-left: 16px;
+    text-align: justify;
+}
+
+.livros .section_participantes ol{
+    margin-top: 0px;
+}
+
+.livros .section_participantes h4{
+    margin-bottom: 8px;
+}
