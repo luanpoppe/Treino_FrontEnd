@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(153, 153, 235, 0.1);
+}
+
+#cabecalho{
+    background-color: rgb(153, 153, 235);
+}
+
+.row{
+    margin-bottom: 32px;
+}

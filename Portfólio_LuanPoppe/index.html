@@ -1,42 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Luan Poppe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Portfólio - Luan Poppe</h1>
-        <div class="col-lg-3">
-            <h2>Blog de Filmes</h2>
-            <a href="./Exercício_07_Bootstrap_2/index.html">
-                Link do portfólio 1
-            </a>
+    <header id="cabecalho" class="sticky-top"> <!-- Cabeçalho -->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Portfólio - Luan Poppe</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#projetos">Projetos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <h2>Portfólio</h2>
-            <a href="./Clube_Leitura/index.html">
-                Clube de Leitura
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <h2>Portfólio</h2>
-            <a href="./Restaurante/index.html">
-                Restaurante - Bootstrap
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <h2>Portfólio</h2>
-            <a href="./Luan Poppe Games/index.html">
-                Luan Poppe Games - Bootstrap
-            </a>
-        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="container">
+        <section id="sobre" class="row"> <!-- Seção Sobre Mim -->
+            <img class="col col-4" src="./_images/Screenshot_20190806-165445_Photos.jpg" alt="Foto Luan">
+            <div class="col col-8"> 
+                <h2>Sobre mim: </h2>
+                <p>
+                    Iniciei minha jornada profissional como médico, e me encantei pela área de programação ao buscar soluções para o dia
+                    a dia de meu antigo trabalho. Após iniciar o estudo na área de tecnologia de forma autodidata, continuo sempre
+                    buscando e adquirindo novos conhecimentos e aptidões.
+                </p>
+                <p>
+                    Atualmente atuo como desenvolvedor front-end, enquanto realizo curso da plataforma da EBAC para me tornar
+                    Desenvolvedor Fullstack, com previsão de término para o fim de 2023.
+                </p>
+                <p>
+                    Possuo como pilares de meu trabalho: comprometimento, inspirar confiança, bom trabalho em equipe, busca por soluções
+                    eficazes, aprendizado contínuo.
+                </p>
+                <p>
+                    <i class="bi bi-github"></i>
+                    GitHub: <a target="_blank" href="https://github.com/luanpoppe">https://github.com/luanpoppe</a>
+                    <br>
+                    <i class="bi bi-linkedin"></i>
+                    Linkedin: <a target="_blank" href="https://www.linkedin.com/in/luan-poppe-b56a4b271/">https://www.linkedin.com/in/luan-poppe-b56a4b271/</a>
+                </p>
+            </div>
+        </section>
+        
+        <section id="projetos" class="row"> <!--Seção de Cards-->
+            <div class="container">
+                <h2>Projetos</h2>
+                <div class="row"> 
+                    <div class="col-4"> <!--Card inteiro--> 
+                        <div class="card">
+                            <a href="./Luan Poppe Games/index.html" target="_blank">
+                                <img src="./_images/Loja Games.png" alt="" class="w-100">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">Luan Poppe Games</h4>
+                                <!-- <h5 class="card-subtitle">Subtítulo do card</h5> -->
+                                <p class="card-text">
+                                    Projeto desenvolvido usando HTML, CSS e Bootstrap
+                                </p>
+                                <a href="./Luan Poppe Games/index.html" target="_blank" class="btn btn-primary">Acesse o site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4"> <!--Card inteiro--> 
+                        <div class="card">
+                            <a href="./Blog de Filmes/index.html" target="_blank">
+                                <img src="./_images/Blog de Filmes.png" alt="" class="w-100">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">Blog de Filmes</h4>
+                                <!-- <h5 class="card-subtitle">Subtítulo do card</h5> -->
+                                <p class="card-text">
+                                    Projeto desenvolvido usando HTML, CSS e Bootstrap
+                                </p>
+                                <a href="./Blog de Filmes/index.html" target="_blank" class="btn btn-primary">Acesse o site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4"> <!--Card inteiro--> 
+                        <div class="card">
+                            <a href="./Restaurante/index.html" target="_blank">
+                                <img src="./_images/Restaurante.png" alt="" class="w-100">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">Restaurante</h4>
+                                <!-- <h5 class="card-subtitle">Subtítulo do card</h5> -->
+                                <p class="card-text">
+                                    Projeto desenvolvido usando HTML, CSS e Bootstrap
+                                </p>
+                                <a href="./Restaurante/index.html" target="_blank" class="btn btn-primary">Acesse o site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
