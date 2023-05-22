@@ -13,3 +13,19 @@ body{
 #foto_Luan{
     min-width: 40vh;
 }
+
+#projetos .row > div{
+    padding-bottom: 24px;
+}
+
+#cabecalho p{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+#cabecalho h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
