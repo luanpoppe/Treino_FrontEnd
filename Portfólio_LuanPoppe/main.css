@@ -9,3 +9,7 @@ body{
 .row{
     margin-bottom: 32px;
 }
+
+#foto_Luan{
+    min-width: 40vh;
+}
